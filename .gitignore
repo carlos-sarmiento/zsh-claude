@@ -1,0 +1,21 @@
+# Temporary files
+*.tmp
+*~
+.DS_Store
+
+# Zsh completion cache
+.zcompdump*
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+
+# Test artifacts
+test_output/
+*.log
