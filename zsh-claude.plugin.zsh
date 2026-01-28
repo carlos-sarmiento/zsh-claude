@@ -510,7 +510,7 @@ claude-setup() {
 _zsh_claude_load_config
 
 # Print loading message only if not using instant prompt or if explicitly enabled
-if [[ -z "$POWERLEVEL9K_INSTANT_PROMPT" || "$ZSH_CLAUDE_VERBOSE" == "1" ]]; then
+if [[ "$ZSH_CLAUDE_VERBOSE" == "1" ]]; then
     printf "${ZSH_CLAUDE_GREEN}✓ zsh-claude loaded${ZSH_CLAUDE_NC}\n"
 
     if _zsh_claude_check_dependencies; then
