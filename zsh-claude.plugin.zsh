@@ -14,13 +14,6 @@ typeset -g ZSH_CLAUDE_YELLOW='\033[1;33m'
 typeset -g ZSH_CLAUDE_BLUE='\033[0;34m'
 typeset -g ZSH_CLAUDE_NC='\033[0m' # No Color
 
-# Default configuration
-typeset -g ZSH_CLAUDE_API_KEY=""
-typeset -g ZSH_CLAUDE_API_URL="https://api.anthropic.com/v1/messages"
-typeset -g ZSH_CLAUDE_MODEL="claude-3-5-haiku-20241022"
-typeset -g ZSH_CLAUDE_MAX_TOKENS="1000"
-typeset -g ZSH_CLAUDE_USE_LITELLM="false"
-
 # Load configuration from file
 _zsh_claude_load_config() {
     if [[ -f "$ZSH_CLAUDE_CONFIG_FILE" ]]; then
